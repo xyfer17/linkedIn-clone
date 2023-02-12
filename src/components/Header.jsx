@@ -184,6 +184,7 @@ const SearchIcon = styled.div`
 const Nav = styled.nav`
   margin-left:auto;
   display:block;
+  z-index:5;
   @media (max-width:768px) {
     position:fixed;
     left:0;
