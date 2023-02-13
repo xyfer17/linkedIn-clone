@@ -10,7 +10,7 @@ const Home = (props) => {
     <div>
       <Header />
       <Container>
-        
+        <Content>
           <Section>
             <h5><a href='/'>Hiring in a Hurry? --</a></h5>
             <p>Find Talendted Pros in record time with Upwork</p>
@@ -20,6 +20,8 @@ const Home = (props) => {
             <Main />
             <RightSide />
           </Layout>
+        </Content>
+          
 
         
 
@@ -52,7 +54,7 @@ const Container = styled.div`
 `
 const Section = styled.section`
   min-height:50px;
-  padding:16px 0;
+  padding:12px 0;
   box-sizing:content-box;
   text-align:center;
   text-decoration:underline;

@@ -109,7 +109,7 @@ align-items:center;
 
     }
     @media (max-width:768px) {
-      min-width:78px;
+      min-width:66px;
     }
  }
 
@@ -184,7 +184,6 @@ const SearchIcon = styled.div`
 const Nav = styled.nav`
   margin-left:auto;
   display:block;
-  z-index:5;
   @media (max-width:768px) {
     position:fixed;
     left:0;
@@ -200,7 +199,8 @@ const Container = styled.div`
 background-color: white;
 border-bottom:1px solid rgba(0,0,0,0.08);
 left:0;
-padding:1px 24px;
+position:fixed;
+padding:0 24px;
 top:0;
 width:100vw;
 z-index:100;
