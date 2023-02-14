@@ -57,18 +57,35 @@ const Main = () => {
             <li>
               <button>
                 <img src="https://static.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" alt="" />
-
+                <img src="https://static.licdn.com/sc/h/cpho5fghnpme8epox8rdcds22" alt="" />
+                <span>75</span>
               </button>
-              
             </li>
              <li>
-              <button>
-                <img src="https://static.licdn.com/sc/h/cpho5fghnpme8epox8rdcds22" alt="" />
-
-              </button>
-              
+             <a>
+              2 comments
+             </a>
             </li>
           </SocialCount>
+          <SocialAction>
+             <button>
+            <img src="/images/like-icon.svg" alt="" />
+            <span>Like</span>
+          </button>
+          <button>
+            <img src="/images/comment-icon.svg" alt="" />
+            <span>Comments</span>
+          </button>
+          <button>
+            <img src="/images/share-icon.svg" alt="" />
+            <span>Repost</span>
+          </button>
+          <button>
+            <img src="/images/send-icon.svg" alt="" />
+            <span>Send</span>
+          </button>
+          </SocialAction>
+         
         </Article>
       </div>
     </Container>
@@ -227,6 +244,46 @@ const SharedImg = styled.div`
   }
 `
 
-const SocialCount = styled.div``
+const SocialCount = styled.ul`
+  line-height:1.3;
+  display:flex;
+  align-items:flex-start;
+  overflow:auto;
+  margin:0 16px;
+  padding:8px 0;
+  border-bottom:1px solid #e9e5df;
+  list-style-type: style none;
+  li{
+    margin-right:5px;
+    font-size:12px;
+    button{
+      display:flex;
+      background:transparent;
+      border:none;
+    }
+  }
+`
+
+const SocialAction = styled.div`
+    align-items:center;
+    display:flex;
+    justify-content:flex-start;
+    margin:0;
+    min-height:40px;
+    padding:4px 8px;
+    button{
+      display:inline-flex;
+      align-items:center;
+      background:transparent;
+      border:none;
+      padding:8px;
+      color:#0a66c2;
+      @media (min-width: 768px) {
+          span{
+            margin-left:8px;
+          }
+      }
+    }
+`
 
 export default Main
